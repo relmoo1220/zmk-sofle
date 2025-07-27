@@ -6,11 +6,11 @@ manifest:
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
-    - name: gpeye
-      url-base: https://github.com/GPeye
+    - name: relmoo1220
+      url-base: https://github.com/relmoo1220
   projects:
-    - name: mario-peripheral-animation
-      remote: gpeye
+    - name: urchin-peripheral-animation
+      remote: relmoo1220
       revision: main 
     - name: zmk
       remote: zmkfirmware
