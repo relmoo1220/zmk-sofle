@@ -6,11 +6,11 @@ manifest:
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
-    - name: relmoo1220
-      url-base: https://github.com/relmoo1220
+    - name: m165437
+      url-base: https://github.com/M165437
   projects:
-    - name: urchin-peripheral-animation
-      remote: relmoo1220
+    - name: nice-view-gem
+      remote: m165437
       revision: main 
     - name: zmk
       remote: zmkfirmware
