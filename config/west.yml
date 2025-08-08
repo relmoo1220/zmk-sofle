@@ -6,11 +6,11 @@ manifest:
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
-    - name: whoop-t
-      url-base: https://github.com/whoop-t
+    - name: gpeye
+      url-base: https://github.com/GPeye
   projects:
-    - name: nice-one-punch-ok
-      remote: whoop-t
+    - name: urchin-peripheral-animation 
+      remote: gpeye
       revision: main 
     - name: zmk
       remote: zmkfirmware
