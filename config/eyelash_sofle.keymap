@@ -47,10 +47,6 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
-
-        toggle_mac {
-            bindings = <&tog 3>;
-        };
     };
 
     keymap {
