@@ -209,7 +209,7 @@ layers:
   - F9
   - F10
   - {type: held}
-  - {t: LAYER3, h: toggle}
+  - {t: LAYER1, h: toggle}
   - $$mdi:bluetooth-off$$
   - BT CLR ALL
   - {t: '$$mdi:transfer$$', type: trans}
