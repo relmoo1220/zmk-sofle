@@ -47,6 +47,10 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
+
+        toggle_mac {
+            bindings = <&tog 4>; // Toggle Layer 4 (Mac Mode)
+        };
     };
 
     keymap {
@@ -81,7 +85,7 @@ display-name = "LAYER0";
         layer_2 {
             bindings = <
 &kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &trans     &kp F11    &kp F12       &trans
+&tog 4     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &trans     &kp F11    &kp F12       &trans
 &trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &trans       &trans
 &trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
 &trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
@@ -90,5 +94,18 @@ display-name = "LAYER0";
             display-name = "LAYER2";
             sensor-bindings = <&scroll_encoder>;
         };
+
+        layer_4 {
+bindings = <
+&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp UP_ARROW &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &mo 2
+&kp TAB &kp Q &kp W &kp F &kp P &kp B &kp DOWN_ARROW &kp J &kp L &kp U &kp Y &kp SEMI &kp BSLH
+&kp LSHFT &kp A &kp R &kp S &kp T &kp G &kp LEFT_ARROW &kp M &kp N &kp E &kp I &kp O &kp APOS
+&kp LEFT_GUI &kp Z &kp X &kp C &kp D &kp V &kp RIGHT_ARROW &kp K &kp H &kp COMMA &kp DOT &kp FSLH &kp RIGHT_GUI
+&kp C_MUTE &kp LCTRL &kp CAPS &kp LEFT_ALT &kp SPACE &mo 1 &kp ENTER &kp ENTER &kp BACKSPACE &kp DELETE &kp RIGHT_SHIFT &kp RCTRL
+>;
+
+sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+display-name = "LAYER4";
+};
     };
 };
