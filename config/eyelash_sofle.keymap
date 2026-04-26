@@ -54,49 +54,72 @@
             compatible = "zmk,behavior-macro";
             label = "COPY_WIN";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp C>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp C>,
+                <&macro_release &kp LCTRL>;
         };
 
         PASTE_WIN: PASTE_WIN {
             compatible = "zmk,behavior-macro";
             label = "PASTE_WIN";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp V>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp V>,
+                <&macro_release &kp LCTRL>;
         };
 
         CUT_WIN: CUT_WIN {
             compatible = "zmk,behavior-macro";
             label = "CUT_WIN";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp X>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp X>,
+                <&macro_release &kp LCTRL>;
         };
 
         COPY_MAC: COPY_MAC {
             compatible = "zmk,behavior-macro";
             label = "COPY_MAC";
             #binding-cells = <0>;
-            bindings = <&kp LGUI &kp C>;
+            bindings =
+                <&macro_press &kp LGUI>,
+                <&macro_tap &kp C>,
+                <&macro_release &kp LGUI>;
         };
 
         PASTE_MAC: PASTE_MAC {
             compatible = "zmk,behavior-macro";
             label = "PASTE_MAC";
             #binding-cells = <0>;
-            bindings = <&kp LGUI &kp V>;
+            bindings =
+                <&macro_press &kp LGUI>,
+                <&macro_tap &kp V>,
+                <&macro_release &kp LGUI>;
         };
 
         MOVE_FILE_MAC: MOVE_FILE_MAC {
             compatible = "zmk,behavior-macro";
             label = "MOVE_FILE_MAC";
             #binding-cells = <0>;
-            bindings = <&kp LGUI &kp LALT &kp V>;
+            bindings =
+                <&macro_press &kp LGUI>,
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp V>,
+                <&macro_release &kp LALT>,
+                <&macro_release &kp LGUI>;
         };
 
         CLEAR_TERM: CLEAR_TERM {
             compatible = "zmk,behavior-macro";
             label = "CLEAR_TERM";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp U>;
+            bindings =
+                <&macro_press &kp LCTRL>,
+                <&macro_tap &kp U>,
+                <&macro_release &kp LCTRL>;
         };
 
         SHIFT_MCLK: SHIFT_MCLK {
