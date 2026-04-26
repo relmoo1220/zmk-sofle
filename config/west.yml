@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: whoop-t
+      url-base: https://github.com/whoop-t
       # Additional modules containing boards/shields/custom code can be listed here as well.
       # See:
       # - https://zmk.dev/docs/features/modules
@@ -9,11 +11,11 @@ manifest:
   #  - name: gpeye
   #    url-base: https://github.com/GPeye
   projects:
-   # - name: mario-peripheral-animation
-   #   remote: gpeye
-   #    revision: main 
-    - name: eyelash_sofle
-      url: https://github.com/a741725193/zmk-sofle
+    # - name: mario-peripheral-animation
+    #   remote: gpeye
+    #    revision: main
+    - name: nice-one-punch-ok
+      remote: whoop-t
       revision: main
     - name: zmk
       remote: zmkfirmware
